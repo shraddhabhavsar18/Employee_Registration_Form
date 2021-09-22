@@ -1,0 +1,115 @@
+<html>
+
+<head>
+  <title>Registration form</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="validation.js"></script>
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body bgcolor="#E4F9F5">
+  <div id="header" align="center">Employee Registration Form</div>
+  <div class="form-style">
+    <h2>All Fields are Mandatory</h2>
+    <form name="Registrationform" method="post">
+      <table align="center" width="400" border="0">
+        <tr>
+          <td>&nbsp;Employee Name</td>
+          <td>
+            <div class="input-group">
+              <input type="text" name="emp_name" size="20">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;Employee Number</td>
+          <td>
+            <div class="input-group">
+              <input type="text" name="emp_no" size="20">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;Email</td>
+          <td>
+            <div class="input-group"><input type="text" name="email"></div>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;Gender</td>
+          <td><span id="gen"><input type="radio" name="gender" value="male" id="male"> Male
+              <input type="radio" name="gender" value="female" id="female"> Female</span></td>
+        </tr>
+        <tr>
+          <td>&nbsp;Address</td>
+          <td><textarea name="address" class="textarea-field"></textarea></td>
+        </tr>
+        <tr>
+          <td>&nbsp;Job Location</td>
+          <td>
+            <div class="input-group">
+              <select id="location" name="location">
+                <option value="">Choose a location</option>
+                <option value="Pune">Pune</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Hydrabad">Hydrabad</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Goa">Goa</option>
+              </select>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;Contact No</td>
+          <td>
+            <div class="input-group"><input type="text" name="contact"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>&nbsp;Designation</td>
+          <td>
+            <div class="input-group">
+              <select id="design" name="designation">
+                <option value="">Choose a Designation</option>
+                <option value="S/W Engineer">S/W Engineer</option>
+                <option value="Systems Engineer">Systems Engineer</option>
+                <option value="Technology Analyst">Technology Analyst</option>
+                <option value="Technology Lead">Technology Lead</option>
+                <option value="Project Manager">Project Manager</option>
+              </select>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="button" name="add" value="Submit" onclick="validate()" class="btn">&nbsp&nbsp
+            <input type="reset" name="reset" value="Reset" class="btn">
+          </td>
+        </tr>
+      </table>
+      <br><br><br>
+      <h2>List of Employees</h2>
+      <table id="tb1" class="table" align="center" width="700" border="1">
+        <thead>
+          <thead>
+            <th>Employee Name</th>
+            <th>Employee No</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Location</th>
+            <th>Contact</th>
+            <th>Designation</th>
+          </thead>
+
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </form>
+  </div>
+</body>
+
+</html>
